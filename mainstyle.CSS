@@ -1,0 +1,446 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* แถบด้านบน */
+nav {
+    padding: 1rem;
+    background-color: #ff2eb8;
+}
+
+.nav-con {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* โลโก้ */
+.logo a {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    text-decoration: none;
+}
+
+/* เมนู */
+.menu {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu li {
+    margin: 0 1rem;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* พื้นที่เนื้อหา */
+.maincontent {
+    background:
+        radial-gradient(circle at 15% 20%, #ff8cdb 0%, transparent 25%),
+        radial-gradient(circle at 85% 20%, #ffe45e 0%, transparent 25%),
+        radial-gradient(circle at 80% 80%, #75e8ff 0%, transparent 30%),
+        linear-gradient(135deg, #ffd6f3, #d8f7ff);
+
+  
+}
+
+/* เนื้อหาด้านซ้าย */
+.maincontent-con {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.maincontent-info {
+    width: 50%;
+    padding: 2rem;
+}
+
+.maincontent-info h3 {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2rem;
+    color: #ff1493;
+}
+
+.maincontent-info p {
+    font-family: 'Kanit', sans-serif;
+    line-height: 1.8;
+}
+
+/* รูปด้านขวา */
+.maincontent-img {
+    width: 50%;
+}
+
+.maincontent-img img {
+    width: 100%;
+    border-radius: 20px;
+    border: 5px solid white;
+    box-shadow: 8px 8px 0 #ff32b5;
+}
+
+
+.maincontent-info .maincontent-btn{
+    font-family: 'Kanit', sans-serif;
+    background-color: #26afff;
+    color: aliceblue;
+    padding: 1%;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.maincontent-img{
+    width: 60%;
+    padding: 2rem;
+}
+
+.content-con{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 2rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.content-title {
+    margin: 2rem 0;
+     font-family: 'Orbitron', sans-serif;
+    font-size: 2rem;
+    color: #ff299c;
+}
+
+.content-item {
+    background: white;
+    padding: 1rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 0 #ff72c6;
+}
+
+.content-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.content-item h4 {
+    margin-top: 1rem;
+    color: #ff299c;
+}
+
+.content-item p {
+    margin: 1rem 0;
+}
+
+.content-item a {
+    display: inline-block;
+    color: white;
+    background-color: #26afff;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-family: 'Kanit', sans-serif;
+}
+
+.footer-top {
+    margin-top: 2rem;
+    padding: 4rem 8%;
+    background:
+        radial-gradient(circle at 10% 20%, #ff4fa3 0%, transparent 25%),
+        radial-gradient(circle at 90% 80%, #26afff 0%, transparent 25%),
+        linear-gradient(135deg, #ff277f, #f72c6c 50%, #ff3cac);
+
+    color: white;
+    font-family: 'Kanit', sans-serif;
+
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* เส้นแสงด้านบน */
+
+.footer-top::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 6px;
+
+    background: linear-gradient(
+        90deg,
+        #26afff,
+        #ffffff,
+        #ff4fa3,
+        #26afff
+    );
+}
+
+
+/* แสงเบลอด้านหลัง */
+
+.footer-top::after {
+    content: "";
+
+    position: absolute;
+
+    width: 300px;
+    height: 300px;
+
+    right: -100px;
+    top: -100px;
+
+    background: #26afff;
+
+    border-radius: 50%;
+
+    filter: blur(100px);
+
+    opacity: 0.5;
+}
+
+
+/* layout */
+
+.footer-top-con {
+    position: relative;
+    z-index: 2;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 5rem;
+
+    max-width: 1100px;
+
+    margin: auto;
+}
+
+
+/* หัวข้อ */
+
+.footer-top-item h2 {
+    font-size: 3rem;
+
+    margin-bottom: 1rem;
+
+    font-weight: 800;
+
+    text-shadow:
+        4px 4px 0px #26afff,
+        0 0 20px rgba(255,255,255,0.5);
+}
+
+
+.footer-desc {
+    font-size: 1.2rem;
+
+    opacity: 0.9;
+
+    line-height: 1.8;
+}
+
+
+/* Social */
+
+.social-box h3 {
+    font-size: 2rem;
+
+    margin-bottom: 1.5rem;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+}
+
+
+/* social แต่ละอัน */
+
+.social-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 1rem;
+
+    width: 100%;
+
+    padding: 1rem 1.2rem;
+
+    margin-bottom: 1rem;
+
+    color: white;
+
+    text-decoration: none;
+
+    background: rgba(255,255,255,0.12);
+
+    border: 2px solid rgba(255,255,255,0.5);
+
+    border-radius: 18px;
+
+    backdrop-filter: blur(10px);
+
+    transition: 0.3s ease;
+
+    box-sizing: border-box;
+}
+
+
+/* โลโก้ */
+
+.social-item i {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.8rem;
+
+    border-radius: 14px;
+
+    background: white;
+
+    color: #f72c6c;
+
+    transition: 0.3s ease;
+}
+
+
+/* ชื่อ */
+
+.social-item span {
+    display: block;
+
+    font-size: 1.2rem;
+
+    font-weight: bold;
+}
+
+
+/* username */
+
+.social-item small {
+    opacity: 0.7;
+
+    font-size: 0.85rem;
+}
+
+
+/* Hover */
+
+.social-item:hover {
+    transform: translateX(12px) scale(1.03);
+
+    background: white;
+
+    color: #f72c6c;
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.2),
+        0 0 25px rgba(255,255,255,0.5);
+}
+
+
+.social-item:hover i {
+    transform: rotate(-8deg) scale(1.1);
+
+    background: #f72c6c;
+
+    color: white;
+}
+
+
+/* YouTube */
+
+.youtube:hover {
+    box-shadow:
+        0 0 25px rgba(255,0,0,0.7);
+}
+
+
+/* Facebook */
+
+.facebook:hover {
+    box-shadow:
+        0 0 25px rgba(24,119,242,0.8);
+}
+
+
+/* Instagram */
+
+.instagram:hover {
+    box-shadow:
+        0 0 25px rgba(225,48,108,0.8);
+}
+
+.spotify:hover {
+    box-shadow:
+        0 0 30px rgba(30, 215, 96, 0.8);
+}
+
+.spotify:hover i {
+    background: #1ed760;
+    color: white;
+}
+
+
+/* Footer bottom */
+
+.footer-bottom {
+    padding: 1.3rem;
+
+    text-align: center;
+
+    background: #26afff;
+
+    color: white;
+
+    font-family: 'Kanit', sans-serif;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    box-shadow:
+        0 -5px 20px rgba(38,175,255,0.5);
+}
+
+
+/* มือถือ */
+
+@media (max-width: 768px) {
+
+    .footer-top {
+        padding: 3rem 1.5rem;
+    }
+
+    .footer-top-con {
+        grid-template-columns: 1fr;
+
+        gap: 2rem;
+    }
+
+    .footer-top-item h2 {
+        font-size: 2.2rem;
+    }
+
+}
